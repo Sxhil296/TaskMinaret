@@ -24,9 +24,9 @@ export default function Home() {
       </Head>
 
       <h1 className="text-white text-3xl justify-center container mx-auto text-center mt-10 font-bold">TaskMinaret</h1>
-      <div className="p-6 container mx-auto mt-20">
+      {/* <div className="p-6 container mx-auto mt-20">
         <div className="relative mb-4">
-          <div className="bg-blue-200  rounded-lg shadow-md h-[570px] w-[430px]">
+          <div className="bg-transparent  rounded-lg shadow-md h-[570px] w-[430px]">
             <TodoWidget />
           </div>
           <div className="absolute top-0 left-[450px] grid grid-cols-3 gap-4 mt-0">
@@ -50,8 +50,36 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div> */}
+
+<div className="p-6 container mx-auto mt-10 ">
+  <div className="relative mb-4 flex flex-col md:flex-row lg:ml-8">
+    <div className="bg-transparent rounded-lg shadow-md h-[762px] md:w-[420px] md:mr-6">
+      <TodoWidget />
+    </div>
+    <div className="mt-4 md:mt-0 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="bg-purple-200 p-4 rounded-lg shadow-md">
+        <VerseWidget />
       </div>
-      <footer className="text-white text-xl justify-center container mx-auto text-center mt-20"> <p>Build with &hearts; by Sahil</p></footer>
+      <div className="bg-green-200 p-4 rounded-lg shadow-md">
+        <NamazWidget />
+      </div>
+      <div className="bg-yellow-200 p-4 rounded-lg shadow-md">
+        <CalendarWidget />
+      </div>
+      <div className="bg-rose-200 p-4 rounded-lg shadow-md">
+        <PomodoroWidget />
+      </div>
+      <div className="bg-blue-200 p-4 rounded-lg shadow-md">
+        <CalculatorWidget />
+      </div>
+      <div className="bg-red-200 p-4 rounded-lg shadow-md">
+        <NasheedPlayer />
+      </div>
+    </div>
+  </div>
+</div>
+      <footer className="text-white text-xl justify-center container mx-auto text-center mt-0"> <p>Build with &hearts; by Sahil</p></footer>
   
     </>
   );
