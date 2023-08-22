@@ -73,7 +73,7 @@ export default function Home() {
       <div className="bg-blue-200 p-4 rounded-lg shadow-md">
         <CalculatorWidget />
       </div>
-      <div className="bg-red-200 p-4 rounded-lg shadow-md">
+      <div className="bg-gray-300 p-4 rounded-lg shadow-md">
         <NasheedPlayer />
       </div>
     </div>
